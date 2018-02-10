@@ -1,16 +1,13 @@
 <template>
   <div class="dialogWrapper" v-show="visible">
     <div class="dialog">
-      <!--<div class="modal">-->
-        <!--<div class="modal-background"></div>-->
-        <!--<div class="modal-content">-->
-          <!-- Any other Bulma elements you want -->
+      
           <header>
             {{title}}
-            <span class="close" @click="close">X</span>
+            <span class="close" @click="close">&times;</span>
           </header>
           <main>
-            <!--如果在slot中添加内容，那么表示在调用该组件时，如果该组件没有内容，那么就将slot中的内容放到其中-->
+            
             <slot></slot>
           </main>
         <!--</div>-->

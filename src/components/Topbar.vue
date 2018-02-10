@@ -89,7 +89,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 16px;
-    font-size: 20px;
+    font-size: 16px;
 
     padding: 16px;
     .actions {
@@ -101,16 +101,16 @@
     }
   }
 
-  /*.button {*/
-    /*text-decoration: none;*/
-    /*display:inline-flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    /*vertical-align: middle;*/
-    /*&:hover {*/
-       /*box-shadow: 1px 1px 1px hsla(0, 0, 0, 0.50);*/
-     /*}*/
-  /*}*/
+  .button {
+    text-decoration: none;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    &:hover {
+       box-shadow: 1px 1px 1px hsla(0, 0, 0, 0.50);
+     } 
+  }
 
   .actions{
 

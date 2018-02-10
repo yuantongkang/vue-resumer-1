@@ -29,25 +29,25 @@ export default new Vuex.Store({
         { title: '联系方式', field: 'contact', icon: 'phone' },
       ],
       profile: {
-        name: '',
-        title: '',
-        city: '',
-        birth: ''
+        姓名: '',
+        标签: '',
+        所在城市: '',
+        生日: ''
       },
       workHistory: [
-        {company: '', duration: '', content: ''},
+        {公司名: '', 经历: '', 工作内容: ''},
       ],
       studyHistory: [
-        {school: '', duration: '', degree: ''}
+        {学校: '', 经历: '', 学位: ''}
       ],
       projects: [
-        {name: '', duration: '', content: ''}
+        {项目名:'', 项目经历: '',项目内容: ''}
       ],
       awards: [
-        {name: ''}
+        {奖名: ''}
       ],
       contact: {
-        phone: '', email: '', wechat: '', qq: ''
+        手机: '', email: '', 微信: '', QQ: ''
       }
     },
   },
