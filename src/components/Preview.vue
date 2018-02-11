@@ -114,10 +114,6 @@ console.log(europa)
 </script>
 <style lang="scss" rel="stylesheet/less">
   .download{
-    z-index: 100000;
-    position: absolute;
-    left: 877px;
-    top:16px;
   }
   #preview{
     padding: 20px;
