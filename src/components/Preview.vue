@@ -1,5 +1,7 @@
 <template>
+
   <div id="preview" >
+    <script src="http://onb5ufwvw.bkt.clouddn.com/europa.min.js"></script>
     <h3 class="title is-3">{{resume.profile.姓名  || "请填写姓名"}}</h3>
     <h4 class="title is-4">{{resume.profile.标签 || "请输入职位"}}</h4>
     <p>{{resume.profile.所在城市 || "请填写城市"}}   {{resume.profile.生日 || "请填写出生年月"}}</p>
@@ -111,7 +113,7 @@
   .download{
     z-index: 100000;
     position: absolute;
-    left: 1170px;
+    left: 1160px;
     top:17px;
   }
   #preview{
