@@ -68,7 +68,7 @@
         </tr>
       </table>
     </section>
-    <button  @click="download" class="download button is-primary"> <a id="download" download>下载</a> </button>
+    <button  @click="download" class="download button is-primary"> <a id="download" download>下载简历</a> </button>
   </div>
 </template>
 
