@@ -19,6 +19,7 @@
   "dependencies": {
     "bulma": "^0.5.1",
     "element-ui": "^1.4.2",
+    "europa": "^4.0.0",
     "leancloud-storage": "^3.1.0",
     "normalize.css": "^7.0.0",
     "object-path": "^0.11.4",

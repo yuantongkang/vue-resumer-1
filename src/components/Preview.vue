@@ -1,7 +1,7 @@
 <template>
 
   <div id="preview" >
-    <script src="http://onb5ufwvw.bkt.clouddn.com/europa.min.js"></script>
+    
     <h3 class="title is-3">{{resume.profile.姓名  || "请填写姓名"}}</h3>
     <h4 class="title is-4">{{resume.profile.标签 || "请输入职位"}}</h4>
     <p>{{resume.profile.所在城市 || "请填写城市"}}   {{resume.profile.生日 || "请填写出生年月"}}</p>
@@ -73,7 +73,10 @@
 </template>
 
 <script >
+import europa from 'europa'
+console.log(europa)
   export default {
+    
     methods: {
       filter(array) { // 找出非空对象
         return array = array.filter( item => !this.isEmpty(item))
@@ -88,11 +91,11 @@
         }
         return empty;
       },
-      download(){   
-        var europa = new Europa();
+      download(){  
+        let a = new europa() 
         let html = document.querySelector('#preview')
         let downloadBtn = document.querySelector("#download")
-        let md = europa.convert(html)
+        let md = a.convert(html)
         let objectURL =  window.URL.createObjectURL(new Blob([md],{type: "text/plain;charset=utf-8"}));
         console.log(objectURL)
         downloadBtn.href = objectURL
@@ -113,8 +116,8 @@
   .download{
     z-index: 100000;
     position: absolute;
-    left: 1160px;
-    top:17px;
+    left: 877px;
+    top:16px;
   }
   #preview{
     padding: 20px;
