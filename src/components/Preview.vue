@@ -66,6 +66,7 @@
         </tr>
       </table>
     </section>
+    <button  @click="download" class="download button is-primary"> <a id="download" download>下载</a> </button>
   </div>
 </template>
 
@@ -84,17 +85,35 @@
           }
         }
         return empty;
+      },
+      download(){   
+        var europa = new Europa();
+        let html = document.querySelector('#preview')
+        let downloadBtn = document.querySelector("#download")
+        let md = europa.convert(html)
+        let objectURL =  window.URL.createObjectURL(new Blob([md],{type: "text/plain;charset=utf-8"}));
+        console.log(objectURL)
+        downloadBtn.href = objectURL
+        downloadBtn.download = "简历.md"
+        console.log(md,html)
       }
     },
     computed: {
       resume() {
         console.log('ahhah')
         return this.$store.state.resume;
-      }
-    }
+      },
+    },
+    
   }
 </script>
 <style lang="scss" rel="stylesheet/less">
+  .download{
+    z-index: 100000;
+    position: absolute;
+    left: 1170px;
+    top:17px;
+  }
   #preview{
     padding: 20px;
     border: 1px solid yellow;
