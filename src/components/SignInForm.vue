@@ -3,6 +3,7 @@
 
 
     <form>
+      <div class="user-form">
       <div class="row">
         <label>用户名</label>
         <input type="text" required v-model="formData.username">
@@ -10,6 +11,7 @@
       <div class="row">
         <label>密码</label>
         <input type="password" required v-model="formData.password">
+      </div>
       </div>
       <div class="signInActions">
         <button @click.prevent="cancel">取 消</button></a>
@@ -59,6 +61,9 @@
 </script>
 
 <style lang="scss" rel="stylesheet/less">
+.user-form{
+  margin:43px 0;
+} 
   form {
     .row {
       display: flex;
@@ -81,10 +86,10 @@
       font-size: 18px;
       &:hover {
         cursor: pointer;
-        border: 1px solid #156bdd;
+        border: 1px solid #00d1b2;
       }
       &.active {
-        background: #156bdd;
+        background: #00d1b2;
         color: #fff;
         &:hover {
           background: #3386dd;

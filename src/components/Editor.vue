@@ -76,7 +76,7 @@
          this.$store.commit('removeFieldItem', {path, index});
        }
      },
-    // created()函数是组件被创建之后的回调函数
+   
     created() {
 
     },
@@ -115,8 +115,7 @@
       }
     }
     svg.icon{
-      width: 24px; // 原设计稿 32px 不好看，改成 24px
-      height: 24px;
+      width: 24px; 
     }
   }
   ol{

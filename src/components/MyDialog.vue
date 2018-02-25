@@ -44,7 +44,9 @@
     justify-content: center;
     align-items:center;
   }
-
+  button{
+    color:#00d1b2
+  }
   .dialog {
     border-radius: 5px;
     background: #fff;
@@ -56,7 +58,7 @@
       padding: 8px 16px;
       display: flex;
       justify-content: space-between;
-      background: #3386dd;
+      background: #00d1b2;
       color: #f0f0f0;
       .close {
         &:hover {
